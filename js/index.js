@@ -18,6 +18,8 @@ var numberOfPeople = document.getElementById('number-of-people-input');
 const tipAmount = document.getElementById('dollar-amount-tip');
 const total = document.getElementById('dollar-amount-total');
 
+
+
 // custom tip function 
 customPercent.addEventListener('click', function(userInput){
     let customTip = parseInt(prompt("Enter tip amount"));
@@ -28,24 +30,181 @@ customPercent.addEventListener('click', function(userInput){
     let totalPerPerson = (bill + customTip) / numOfPeople;
     total.innerText = `$${totalPerPerson}`;
 
-
-
-
     
+   
+
+
+
     if (isNaN(customTip)) {
         alert('Tip can only be a number!')
         tipAmount.innerText = `$0`;
-        total.innerText = `$0`;
+        total.innerText = `$0`;   
+    } else if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
     } else {
         tipAmount.innerText = `$${tipPerPerson}`;
         total.innerText = `$${totalPerPerson}`;
     }
 
     
+    });
+
+
+
+// reset function 
+
+resetBtn.addEventListener('click', function(){
+    billTotal.value = ''
+    numberOfPeople.value = ''
+    tipAmount.innerText = `$0`;
+    total.innerText = `$0`; 
+})
+
+
+// 5%  function to add tip 
+
+fivePercent.addEventListener('click', function () {
+    let bill = parseInt(billTotal.value);
+    let numOfPeople = parseInt(numberOfPeople.value);
+    let tip = (0.05 * bill);
+    let tipPerPerson = tip/numOfPeople
+    let totalPerPerson = (tip + bill)/numOfPeople;
+    tipAmount.innerText = `$${tipPerPerson}`;
+    total.innerText = `$${totalPerPerson}`;
+
+
+
+
+    if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else {
+        tipAmount.innerText = `$${tipPerPerson}`;
+        total.innerText = `$${totalPerPerson}`;
+    }
 });
 
 
+// 10%  function to add tip 
+
+tenPercent.addEventListener('click', function () {
+    let bill = parseInt(billTotal.value);
+    let numOfPeople = parseInt(numberOfPeople.value);
+    let tip = (0.1 * bill);
+    let tipPerPerson = tip/numOfPeople
+    let totalPerPerson = (tip + bill)/numOfPeople;
+    tipAmount.innerText = `$${tipPerPerson}`;
+    total.innerText = `$${totalPerPerson}`;
 
 
-// percentage function to add tip 3
 
+
+    if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else {
+        tipAmount.innerText = `$${tipPerPerson}`;
+        total.innerText = `$${totalPerPerson}`;
+    }
+});
+
+
+// 15%  function to add tip 
+
+fifteenPercent.addEventListener('click', function () {
+    let bill = parseInt(billTotal.value);
+    let numOfPeople = parseInt(numberOfPeople.value);
+    let tip = (0.15 * bill);
+    let tipPerPerson = tip/numOfPeople
+    let totalPerPerson = (tip + bill)/numOfPeople;
+    tipAmount.innerText = `$${tipPerPerson}`;
+    total.innerText = `$${totalPerPerson}`;
+
+
+
+
+    if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else {
+        tipAmount.innerText = `$${tipPerPerson}`;
+        total.innerText = `$${totalPerPerson}`;
+    }
+});
+
+// 25%  function to add tip 
+
+twentyFivePercent.addEventListener('click', function () {
+    let bill = parseInt(billTotal.value);
+    let numOfPeople = parseInt(numberOfPeople.value);
+    let tip = (0.25 * bill);
+    let tipPerPerson = tip/numOfPeople
+    let totalPerPerson = (tip + bill)/numOfPeople;
+    tipAmount.innerText = `$${tipPerPerson}`;
+    total.innerText = `$${totalPerPerson}`;
+
+
+
+
+    if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else {
+        tipAmount.innerText = `$${tipPerPerson}`;
+        total.innerText = `$${totalPerPerson}`;
+    }
+});
+
+// 50%  function to add tip 
+
+fiftyPercent.addEventListener('click', function () {
+    let bill = parseInt(billTotal.value);
+    let numOfPeople = parseInt(numberOfPeople.value);
+    let tip = (0.5 * bill);
+    let tipPerPerson = tip/numOfPeople
+    let totalPerPerson = (tip + bill)/numOfPeople;
+    tipAmount.innerText = `$${tipPerPerson}`;
+    total.innerText = `$${totalPerPerson}`;
+
+
+
+
+    if (isNaN(bill) || bill === 0) {
+        alert ('Enter bill amount!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else if (isNaN(numOfPeople) || numOfPeople === 0) {
+        alert ('Enter number of people!');
+        tipAmount.innerText = `$0`;
+        total.innerText = `$0`; 
+    } else {
+        tipAmount.innerText = `$${tipPerPerson}`;
+        total.innerText = `$${totalPerPerson}`;
+    }
+});
