@@ -5,11 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tip calculator</title>
 </head>
 <body>
-    
+    <h1>SPLI <br> TTER</h1>
 
+    <!-- main div-->
+        <div id="container-main">
+            <!--Left side of the container-main -->       
+            <div id="left-side">
+                <div id="bill-container">
+                    <p>Bill</p>
+                    <input type="number" id="bill-total">
+                </div> 
+                <div><p id="select-tip">Select tip %</p>
+                <div id="select-tip-container">
+                    <button id="5-percent-btn" class="tip-select">5%</button>
+                    <button id="10-percent-btn" class="tip-select">10%</button>
+                    <button id="15-percent-btn" class="tip-select">15%</button>
+                    <button id="25-percent-btn" class="tip-select">25%</button>
+                    <button id="50-percent-btn" class="tip-select">50%</button>
+                    <button id="custom-percent-btn" class="tip-select custom-btn">Custom</button>
+                </div>
+                </div>
+                    <div id="number-of-people-container">
+                        <p>number of people</p>
+                        <input type="number" id="number-of-people-input">
+                    </div>
+            </div>
+            <!--right side of the container-maim -->
+            <div id="right-side">
+                <div id="tip-amount-container">
+                    <p>Tip Amount <span>/person</span></p>
+                    <p id="dollar-amount-tip">$0</p>
+                </div>
+                <div id="total-amount-container">
+                    <p>Total<span>/person</span></p>
+                    <p id="dollar-amount-total">$0</p>
+                </div>
+                <button type="reset" id="reset">Reset</button>
+
+            </div>
+        </div>
 
     <script src="js/index.js"></script>
 </body>

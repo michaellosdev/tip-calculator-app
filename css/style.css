@@ -3,4 +3,155 @@
           box-sizing: border-box;
   margin: 0;
 }
+
+body {
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  background-color: #c5e4e7;
+  margin-top: 100px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: #f4fafa;
+  height: 30px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #00494d;
+  clear: both;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+span {
+  display: block;
+  font-size: 0.7rem;
+  color: #7f9c9f;
+}
+
+input:focus {
+  outline: none;
+}
+
+#container-main {
+  margin: 0 auto;
+  max-width: 700px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#left-side, #right-side {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px;
+  height: 80%;
+}
+
+#right-side {
+  background-color: #00494d;
+  color: white;
+  border-radius: 20px;
+}
+
+#bill-container, #number-of-people-container, #select-tip {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#select-tip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tip-select {
+  background-color: #00494d;
+  color: white;
+  width: 30%;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.tip-select:hover {
+  background-color: #26c0ab;
+}
+
+.custom-btn {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+
+.custom-btn:hover {
+  color: white;
+}
+
+#tip-amount-container, #total-amount-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px;
+}
+
+#reset {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #26c0ab;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transform: 0.1s;
+          transform: 0.1s;
+}
+
+#reset:hover {
+  color: white;
+  background-color: #7f9c9f;
+}
+
+#dollar-amount-tip, #dollar-amount-total {
+  color: #26c0ab;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
