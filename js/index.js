@@ -25,9 +25,9 @@ customPercent.addEventListener('click', function(userInput){
     let customTip = parseInt(prompt("Enter tip amount"));
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
-    let tipPerPerson = customTip / numOfPeople
+    let tipPerPerson = (customTip / numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
-    let totalPerPerson = (bill + customTip) / numOfPeople;
+    let totalPerPerson = ((bill + customTip) / numOfPeople).toFixed(2);
     total.innerText = `$${totalPerPerson}`;
 
     
@@ -73,8 +73,8 @@ fivePercent.addEventListener('click', function () {
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
     let tip = (0.05 * bill);
-    let tipPerPerson = tip/numOfPeople
-    let totalPerPerson = (tip + bill)/numOfPeople;
+    let tipPerPerson = (tip/numOfPeople).toFixed(2);
+    let totalPerPerson = ((tip + bill)/numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
     total.innerText = `$${totalPerPerson}`;
 
@@ -102,8 +102,8 @@ tenPercent.addEventListener('click', function () {
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
     let tip = (0.1 * bill);
-    let tipPerPerson = tip/numOfPeople
-    let totalPerPerson = (tip + bill)/numOfPeople;
+    let tipPerPerson = (tip/numOfPeople).toFixed(2);
+    let totalPerPerson = ((tip + bill)/numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
     total.innerText = `$${totalPerPerson}`;
 
@@ -131,8 +131,8 @@ fifteenPercent.addEventListener('click', function () {
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
     let tip = (0.15 * bill);
-    let tipPerPerson = tip/numOfPeople
-    let totalPerPerson = (tip + bill)/numOfPeople;
+    let tipPerPerson = (tip/numOfPeople).toFixed(2);
+    let totalPerPerson = ((tip + bill)/numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
     total.innerText = `$${totalPerPerson}`;
 
@@ -159,8 +159,8 @@ twentyFivePercent.addEventListener('click', function () {
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
     let tip = (0.25 * bill);
-    let tipPerPerson = tip/numOfPeople
-    let totalPerPerson = (tip + bill)/numOfPeople;
+    let tipPerPerson = (tip/numOfPeople).toFixed(2);
+    let totalPerPerson = ((tip + bill)/numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
     total.innerText = `$${totalPerPerson}`;
 
@@ -187,8 +187,8 @@ fiftyPercent.addEventListener('click', function () {
     let bill = parseInt(billTotal.value);
     let numOfPeople = parseInt(numberOfPeople.value);
     let tip = (0.5 * bill);
-    let tipPerPerson = tip/numOfPeople
-    let totalPerPerson = (tip + bill)/numOfPeople;
+    let tipPerPerson = (tip/numOfPeople).toFixed(2);
+    let totalPerPerson = ((tip + bill)/numOfPeople).toFixed(2);
     tipAmount.innerText = `$${tipPerPerson}`;
     total.innerText = `$${totalPerPerson}`;
 
